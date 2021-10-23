@@ -50,6 +50,14 @@ namespace Trabajo_Final
             this.button2 = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnRASalir = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegArt)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,33 +140,34 @@ namespace Trabajo_Final
             this.CmbTipoProd.Name = "CmbTipoProd";
             this.CmbTipoProd.Size = new System.Drawing.Size(121, 24);
             this.CmbTipoProd.TabIndex = 8;
+            this.CmbTipoProd.SelectedIndexChanged += new System.EventHandler(this.CmbTipoProd_SelectedIndexChanged);
             // 
             // TxtNomProd
             // 
-            this.TxtNomProd.Location = new System.Drawing.Point(154, 28);
+            this.TxtNomProd.Location = new System.Drawing.Point(111, 28);
             this.TxtNomProd.Name = "TxtNomProd";
-            this.TxtNomProd.Size = new System.Drawing.Size(100, 22);
+            this.TxtNomProd.Size = new System.Drawing.Size(224, 22);
             this.TxtNomProd.TabIndex = 9;
             // 
             // TxtUbicaProd
             // 
-            this.TxtUbicaProd.Location = new System.Drawing.Point(154, 57);
+            this.TxtUbicaProd.Location = new System.Drawing.Point(111, 57);
             this.TxtUbicaProd.Name = "TxtUbicaProd";
-            this.TxtUbicaProd.Size = new System.Drawing.Size(100, 22);
+            this.TxtUbicaProd.Size = new System.Drawing.Size(224, 22);
             this.TxtUbicaProd.TabIndex = 10;
             // 
             // TxtCostoProd
             // 
-            this.TxtCostoProd.Location = new System.Drawing.Point(154, 86);
+            this.TxtCostoProd.Location = new System.Drawing.Point(111, 86);
             this.TxtCostoProd.Name = "TxtCostoProd";
-            this.TxtCostoProd.Size = new System.Drawing.Size(100, 22);
+            this.TxtCostoProd.Size = new System.Drawing.Size(118, 22);
             this.TxtCostoProd.TabIndex = 11;
             // 
             // TxtPrecioProd
             // 
-            this.TxtPrecioProd.Location = new System.Drawing.Point(154, 115);
+            this.TxtPrecioProd.Location = new System.Drawing.Point(111, 115);
             this.TxtPrecioProd.Name = "TxtPrecioProd";
-            this.TxtPrecioProd.Size = new System.Drawing.Size(100, 22);
+            this.TxtPrecioProd.Size = new System.Drawing.Size(118, 22);
             this.TxtPrecioProd.TabIndex = 12;
             // 
             // TxtCantMin
@@ -185,16 +194,25 @@ namespace Trabajo_Final
             // dgvRegArt
             // 
             this.dgvRegArt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRegArt.Location = new System.Drawing.Point(12, 200);
+            this.dgvRegArt.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
+            this.dgvRegArt.Location = new System.Drawing.Point(12, 156);
             this.dgvRegArt.Name = "dgvRegArt";
             this.dgvRegArt.RowHeadersWidth = 51;
             this.dgvRegArt.RowTemplate.Height = 24;
-            this.dgvRegArt.Size = new System.Drawing.Size(776, 238);
+            this.dgvRegArt.Size = new System.Drawing.Size(1219, 282);
             this.dgvRegArt.TabIndex = 16;
             // 
             // BtnGuardar
             // 
-            this.BtnGuardar.Location = new System.Drawing.Point(35, 159);
+            this.BtnGuardar.Location = new System.Drawing.Point(692, 25);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(75, 23);
             this.BtnGuardar.TabIndex = 17;
@@ -204,7 +222,7 @@ namespace Trabajo_Final
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(154, 159);
+            this.button2.Location = new System.Drawing.Point(692, 54);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 18;
@@ -214,7 +232,7 @@ namespace Trabajo_Final
             // 
             // BtnEditar
             // 
-            this.BtnEditar.Location = new System.Drawing.Point(283, 159);
+            this.BtnEditar.Location = new System.Drawing.Point(692, 83);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(75, 23);
             this.BtnEditar.TabIndex = 19;
@@ -224,7 +242,7 @@ namespace Trabajo_Final
             // 
             // BtnRASalir
             // 
-            this.BtnRASalir.Location = new System.Drawing.Point(393, 159);
+            this.BtnRASalir.Location = new System.Drawing.Point(692, 112);
             this.BtnRASalir.Name = "BtnRASalir";
             this.BtnRASalir.Size = new System.Drawing.Size(75, 23);
             this.BtnRASalir.TabIndex = 20;
@@ -232,11 +250,67 @@ namespace Trabajo_Final
             this.BtnRASalir.UseVisualStyleBackColor = true;
             this.BtnRASalir.Click += new System.EventHandler(this.BtnRASalir_Click);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Nombre";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 200;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Ubicación";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 200;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Costo";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Precio";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Cant. Minima";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Cant. Maxina";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Existencia";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 125;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Tipo De Producto";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 150;
+            // 
             // FormRArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1243, 452);
             this.Controls.Add(this.BtnRASalir);
             this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.button2);
@@ -290,5 +364,13 @@ namespace Trabajo_Final
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button BtnEditar;
         private System.Windows.Forms.Button BtnRASalir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
     }
 }

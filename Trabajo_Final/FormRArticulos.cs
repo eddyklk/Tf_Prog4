@@ -81,7 +81,11 @@ namespace Trabajo_Final
                 MessageBox.Show("Seleccione una fila por favor");
             }
         }
-   
+
+        private void CmbTipoProd_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
