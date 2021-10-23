@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassDatos.cs" />
+    <Compile Include="ConexionCombo.cs" />
     <Compile Include="FormRArticulos.cs">
       <SubType>Form</SubType>
     </Compile>

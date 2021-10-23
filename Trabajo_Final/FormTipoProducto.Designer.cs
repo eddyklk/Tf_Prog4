@@ -45,6 +45,7 @@ namespace Trabajo_Final
             this.btnProGuardar.TabIndex = 0;
             this.btnProGuardar.Text = "Guardar";
             this.btnProGuardar.UseVisualStyleBackColor = true;
+            this.btnProGuardar.Click += new System.EventHandler(this.btnProGuardar_Click);
             // 
             // TxtmodtipPro
             // 

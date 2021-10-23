@@ -82,7 +82,7 @@ namespace Trabajo_Final
             }
         }
 
-        private void CmbTipoProd_SelectedIndexChanged(object sender, EventArgs e)
+         private void CmbTipoProd_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
