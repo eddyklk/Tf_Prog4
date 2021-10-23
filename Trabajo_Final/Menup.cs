@@ -28,6 +28,7 @@ namespace Trabajo_Final
         {
             FormRArticulos formRArticulos = new FormRArticulos();
             formRArticulos.ShowDialog();
+            
         }
     }
 }

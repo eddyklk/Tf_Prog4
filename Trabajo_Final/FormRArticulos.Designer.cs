@@ -46,9 +46,9 @@ namespace Trabajo_Final
             this.TxtCantMax = new System.Windows.Forms.TextBox();
             this.TxtExistencia = new System.Windows.Forms.TextBox();
             this.dgvRegArt = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnGuardar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnRASalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegArt)).BeginInit();
             this.SuspendLayout();
@@ -192,14 +192,15 @@ namespace Trabajo_Final
             this.dgvRegArt.Size = new System.Drawing.Size(776, 238);
             this.dgvRegArt.TabIndex = 16;
             // 
-            // button1
+            // BtnGuardar
             // 
-            this.button1.Location = new System.Drawing.Point(35, 159);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnGuardar.Location = new System.Drawing.Point(35, 159);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.BtnGuardar.TabIndex = 17;
+            this.BtnGuardar.Text = "Guardar";
+            this.BtnGuardar.UseVisualStyleBackColor = true;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // button2
             // 
@@ -211,14 +212,15 @@ namespace Trabajo_Final
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // BtnEditar
             // 
-            this.button3.Location = new System.Drawing.Point(283, 159);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Editar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnEditar.Location = new System.Drawing.Point(283, 159);
+            this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.Size = new System.Drawing.Size(75, 23);
+            this.BtnEditar.TabIndex = 19;
+            this.BtnEditar.Text = "Editar";
+            this.BtnEditar.UseVisualStyleBackColor = true;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
             // BtnRASalir
             // 
@@ -236,9 +238,9 @@ namespace Trabajo_Final
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BtnRASalir);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnGuardar);
             this.Controls.Add(this.dgvRegArt);
             this.Controls.Add(this.TxtExistencia);
             this.Controls.Add(this.TxtCantMax);
@@ -284,9 +286,9 @@ namespace Trabajo_Final
         private System.Windows.Forms.TextBox TxtCantMax;
         private System.Windows.Forms.TextBox TxtExistencia;
         private System.Windows.Forms.DataGridView dgvRegArt;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnEditar;
         private System.Windows.Forms.Button BtnRASalir;
     }
 }

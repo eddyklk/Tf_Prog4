@@ -74,5 +74,20 @@ namespace Registros
             }
         }
 
+        public bool Editar(string tabla, string campos, string valores)
+        {
+            con.Open();
+            string sql = $"INSERT INTO {tabla}({campos}) VALUES ({valores})";
+            SqlCommand command = new SqlCommand(sql, con);
+            if (command.ExecuteNonQuery() > 0)
+            {
+                con.Close();
+                return true;
+            }
+
+            else
+                return false;
+        }
+
     }
 }
