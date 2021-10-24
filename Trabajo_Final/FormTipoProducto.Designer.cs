@@ -39,9 +39,10 @@ namespace Trabajo_Final
             // 
             // btnProGuardar
             // 
-            this.btnProGuardar.Location = new System.Drawing.Point(12, 52);
+            this.btnProGuardar.Location = new System.Drawing.Point(9, 42);
+            this.btnProGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnProGuardar.Name = "btnProGuardar";
-            this.btnProGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnProGuardar.Size = new System.Drawing.Size(56, 19);
             this.btnProGuardar.TabIndex = 0;
             this.btnProGuardar.Text = "Guardar";
             this.btnProGuardar.UseVisualStyleBackColor = true;
@@ -49,13 +50,22 @@ namespace Trabajo_Final
             // 
             // TxtmodtipPro
             // 
-            this.TxtmodtipPro.Location = new System.Drawing.Point(12, 13);
+            this.TxtmodtipPro.Location = new System.Drawing.Point(9, 11);
+            this.TxtmodtipPro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtmodtipPro.Name = "TxtmodtipPro";
-            this.TxtmodtipPro.Size = new System.Drawing.Size(237, 22);
+            this.TxtmodtipPro.Size = new System.Drawing.Size(179, 20);
             this.TxtmodtipPro.TabIndex = 1;
             // 
             // dgvTipoProd
             // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(9, 81);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(178, 266);
+            this.dataGridView1.TabIndex = 2;
             this.dgvTipoProd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTipoProd.Location = new System.Drawing.Point(12, 100);
             this.dgvTipoProd.Name = "dgvTipoProd";
@@ -66,32 +76,35 @@ namespace Trabajo_Final
             // 
             // BtnProEditar
             // 
-            this.BtnProEditar.Location = new System.Drawing.Point(93, 52);
+            this.BtnProEditar.Location = new System.Drawing.Point(70, 42);
+            this.BtnProEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnProEditar.Name = "BtnProEditar";
-            this.BtnProEditar.Size = new System.Drawing.Size(75, 23);
+            this.BtnProEditar.Size = new System.Drawing.Size(56, 19);
             this.BtnProEditar.TabIndex = 3;
             this.BtnProEditar.Text = "Editar";
             this.BtnProEditar.UseVisualStyleBackColor = true;
             // 
             // BtnProSalir
             // 
-            this.BtnProSalir.Location = new System.Drawing.Point(174, 52);
+            this.BtnProSalir.Location = new System.Drawing.Point(130, 42);
+            this.BtnProSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnProSalir.Name = "BtnProSalir";
-            this.BtnProSalir.Size = new System.Drawing.Size(75, 23);
+            this.BtnProSalir.Size = new System.Drawing.Size(56, 19);
             this.BtnProSalir.TabIndex = 4;
             this.BtnProSalir.Text = "Salir";
             this.BtnProSalir.UseVisualStyleBackColor = true;
             // 
             // FormTipoProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 441);
+            this.ClientSize = new System.Drawing.Size(195, 358);
             this.Controls.Add(this.BtnProSalir);
             this.Controls.Add(this.BtnProEditar);
             this.Controls.Add(this.dgvTipoProd);
             this.Controls.Add(this.TxtmodtipPro);
             this.Controls.Add(this.btnProGuardar);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormTipoProducto";
             this.Text = "FormTipoProducto";
             ((System.ComponentModel.ISupportInitialize)(this.dgvTipoProd)).EndInit();

@@ -19,15 +19,15 @@ namespace Trabajo_Final
         }
 
     
-private void BtnIniciar_Click(object sender, EventArgs e)
+        private void BtnIniciar_Click(object sender, EventArgs e)
         {
             
             ClassDatos Datos = new ClassDatos();
             if (Datos.Ingresar(TxtUsuario.Text, TxtContra.Text) == true)
             {
-                Form Formulario = new MenuP();
-                Formulario.ShowDialog();
-                this.Close();
+                MenuP Formulario = new MenuP();
+                Formulario.setLoginForm(this);
+                Formulario.ShowDialog();                
             }
             else
             {
@@ -37,6 +37,14 @@ private void BtnIniciar_Click(object sender, EventArgs e)
                 TxtUsuario.Focus();
             }
 
+        }
+
+        private void TxtContra_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                BtnIniciar_Click(sender, e);
+            }
         }
     }
 }

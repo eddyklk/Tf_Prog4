@@ -19,6 +19,7 @@ namespace Trabajo_Final
 
         private void btnProGuardar_Click(object sender, EventArgs e)
         {
+
             dgvTipoProd.Rows.Add(TxtmodtipPro.Text);
         }
     }
