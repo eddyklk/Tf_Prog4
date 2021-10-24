@@ -30,5 +30,11 @@ namespace Trabajo_Final
             formRArticulos.ShowDialog();
             
         }
+
+        private void tipoDeProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             FormTipoProducto formTipoProducto = new FormTipoProducto();
+            formTipoProducto.ShowDialog();
+        }
     }
 }

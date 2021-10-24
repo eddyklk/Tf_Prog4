@@ -46,10 +46,6 @@ namespace Trabajo_Final
             this.TxtCantMax = new System.Windows.Forms.TextBox();
             this.TxtExistencia = new System.Windows.Forms.TextBox();
             this.dgvRegArt = new System.Windows.Forms.DataGridView();
-            this.BtnGuardar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.BtnEditar = new System.Windows.Forms.Button();
-            this.BtnRASalir = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +54,10 @@ namespace Trabajo_Final
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnGuardar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.BtnEditar = new System.Windows.Forms.Button();
+            this.BtnRASalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegArt)).BeginInit();
             this.SuspendLayout();
             // 
@@ -210,46 +210,6 @@ namespace Trabajo_Final
             this.dgvRegArt.Size = new System.Drawing.Size(1219, 282);
             this.dgvRegArt.TabIndex = 16;
             // 
-            // BtnGuardar
-            // 
-            this.BtnGuardar.Location = new System.Drawing.Point(692, 25);
-            this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.BtnGuardar.TabIndex = 17;
-            this.BtnGuardar.Text = "Guardar";
-            this.BtnGuardar.UseVisualStyleBackColor = true;
-            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(692, 54);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Limpiar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // BtnEditar
-            // 
-            this.BtnEditar.Location = new System.Drawing.Point(692, 83);
-            this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.Size = new System.Drawing.Size(75, 23);
-            this.BtnEditar.TabIndex = 19;
-            this.BtnEditar.Text = "Editar";
-            this.BtnEditar.UseVisualStyleBackColor = true;
-            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
-            // 
-            // BtnRASalir
-            // 
-            this.BtnRASalir.Location = new System.Drawing.Point(692, 112);
-            this.BtnRASalir.Name = "BtnRASalir";
-            this.BtnRASalir.Size = new System.Drawing.Size(75, 23);
-            this.BtnRASalir.TabIndex = 20;
-            this.BtnRASalir.Text = "Salir";
-            this.BtnRASalir.UseVisualStyleBackColor = true;
-            this.BtnRASalir.Click += new System.EventHandler(this.BtnRASalir_Click);
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "Nombre";
@@ -305,6 +265,46 @@ namespace Trabajo_Final
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             this.Column8.Width = 150;
+            // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.Location = new System.Drawing.Point(687, 31);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.BtnGuardar.TabIndex = 17;
+            this.BtnGuardar.Text = "Guardar";
+            this.BtnGuardar.UseVisualStyleBackColor = true;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(687, 60);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Limpiar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // BtnEditar
+            // 
+            this.BtnEditar.Location = new System.Drawing.Point(687, 89);
+            this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.Size = new System.Drawing.Size(75, 23);
+            this.BtnEditar.TabIndex = 19;
+            this.BtnEditar.Text = "Editar";
+            this.BtnEditar.UseVisualStyleBackColor = true;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
+            // 
+            // BtnRASalir
+            // 
+            this.BtnRASalir.Location = new System.Drawing.Point(687, 118);
+            this.BtnRASalir.Name = "BtnRASalir";
+            this.BtnRASalir.Size = new System.Drawing.Size(75, 23);
+            this.BtnRASalir.TabIndex = 20;
+            this.BtnRASalir.Text = "Salir";
+            this.BtnRASalir.UseVisualStyleBackColor = true;
+            this.BtnRASalir.Click += new System.EventHandler(this.BtnRASalir_Click);
             // 
             // FormRArticulos
             // 

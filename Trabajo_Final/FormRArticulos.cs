@@ -61,10 +61,13 @@ namespace Trabajo_Final
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            datos.Insert("Productos", "NomProd,UbicaProd,CostoProd,PrecioProd,CantidadMin,CantidadMax,Existencia", $"'{TxtNomProd.Text}','{TxtUbicaProd.Text}','{TxtCostoProd.Text}','{TxtPrecioProd.Text}','{TxtCantMin.Text}','{TxtCantMax.Text}'");
-            MessageBox.Show("Guardado Correctamente");
-            dgvRegArt.DataSource = datos.Consulta("Productos");
+            
 
+            dgvRegArt.Rows.Add(TxtNomProd.Text, TxtUbicaProd.Text, TxtCostoProd.Text, TxtPrecioProd.Text, TxtCantMin.Text, TxtCantMax.Text, TxtExistencia.Text, CmbTipoProd.Text);
+
+            //datos.Insert("Productos", "NomProd,UbicaProd,CostoProd,PrecioProd,CantidadMin,CantidadMax,Existencia", $"'{TxtNomProd.Text}','{TxtUbicaProd.Text}','{TxtCostoProd.Text}','{TxtPrecioProd.Text}','{TxtCantMin.Text}','{TxtCantMax.Text}','{TxtExistencia.Text}','{CmbTipoProd.Text}',");
+            //MessageBox.Show("Guardado Correctamente");
+            //dgvRegArt.DataSource = datos.Consulta("Productos");
         }
 
         private void BtnEditar_Click(object sender, EventArgs e)
@@ -80,7 +83,7 @@ namespace Trabajo_Final
                 TxtCantMin.Text    = dgvRegArt.CurrentRow.Cells["Cantidad Minima"].Value.ToString();
                 TxtCantMax.Text    = dgvRegArt.CurrentRow.Cells["Cantidad Maxima"].Value.ToString();
                 TxtExistencia.Text = dgvRegArt.CurrentRow.Cells["Existencia"].Value.ToString();
-               // CmbTipoProd.SelectedIndex =
+             
             }
             else
             {
@@ -88,16 +91,21 @@ namespace Trabajo_Final
             }
         }
 
+        
          private void CmbTipoProd_SelectedIndexChanged(object sender, EventArgs e)
         {
           
                      
         }
-        
 
+        private void BtnRAConsultar_Click(object sender, EventArgs e)
+        {
+            ClassDatos Datos = new ClassDatos();
+            dgvRegArt.DataSource = Datos.Consulta("Select NomProd ,UbicaProd,CostoProd,PrecioProd,CantidadMin,CantidadMax as 'Cantidad Maxima' ,Existencia from Productos");
 
-        
-       
+            
+
+        }
     }
 }
 

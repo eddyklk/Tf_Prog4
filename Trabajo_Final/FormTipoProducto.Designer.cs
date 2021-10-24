@@ -31,10 +31,10 @@ namespace Trabajo_Final
         {
             this.btnProGuardar = new System.Windows.Forms.Button();
             this.TxtmodtipPro = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvTipoProd = new System.Windows.Forms.DataGridView();
             this.BtnProEditar = new System.Windows.Forms.Button();
             this.BtnProSalir = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTipoProd)).BeginInit();
             this.SuspendLayout();
             // 
             // btnProGuardar
@@ -45,7 +45,7 @@ namespace Trabajo_Final
             this.btnProGuardar.TabIndex = 0;
             this.btnProGuardar.Text = "Guardar";
             this.btnProGuardar.UseVisualStyleBackColor = true;
-        //    this.btnProGuardar.Click += new System.EventHandler(this.btnProGuardar_Click);
+            this.btnProGuardar.Click += new System.EventHandler(this.btnProGuardar_Click);
             // 
             // TxtmodtipPro
             // 
@@ -54,15 +54,15 @@ namespace Trabajo_Final
             this.TxtmodtipPro.Size = new System.Drawing.Size(237, 22);
             this.TxtmodtipPro.TabIndex = 1;
             // 
-            // dataGridView1
+            // dgvTipoProd
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 100);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(237, 327);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvTipoProd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTipoProd.Location = new System.Drawing.Point(12, 100);
+            this.dgvTipoProd.Name = "dgvTipoProd";
+            this.dgvTipoProd.RowHeadersWidth = 51;
+            this.dgvTipoProd.RowTemplate.Height = 24;
+            this.dgvTipoProd.Size = new System.Drawing.Size(237, 327);
+            this.dgvTipoProd.TabIndex = 2;
             // 
             // BtnProEditar
             // 
@@ -89,12 +89,12 @@ namespace Trabajo_Final
             this.ClientSize = new System.Drawing.Size(260, 441);
             this.Controls.Add(this.BtnProSalir);
             this.Controls.Add(this.BtnProEditar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvTipoProd);
             this.Controls.Add(this.TxtmodtipPro);
             this.Controls.Add(this.btnProGuardar);
             this.Name = "FormTipoProducto";
             this.Text = "FormTipoProducto";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTipoProd)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,7 +104,7 @@ namespace Trabajo_Final
 
         private System.Windows.Forms.Button btnProGuardar;
         private System.Windows.Forms.TextBox TxtmodtipPro;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvTipoProd;
         private System.Windows.Forms.Button BtnProEditar;
         private System.Windows.Forms.Button BtnProSalir;
     }

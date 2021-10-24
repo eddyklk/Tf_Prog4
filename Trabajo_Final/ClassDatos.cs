@@ -91,5 +91,53 @@ namespace Registros
         }
 
 
+        public DataTable GetTipoProductos()
+        {
+            string Query = "EXEC DBO.SP_ObtenerTipoProductos ";
+            DataTable DtTabla = new DataTable();
+            try
+            {
+                con.Open();
+                SqlDataAdapter Da = new SqlDataAdapter(Query, con);
+                Da.Fill(DtTabla);
+            }
+            catch (Exception EX)
+            {
+                throw;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return DtTabla;
+        }
+        public DataTable UPDATETipoProductos(int IdTipoProd, string NomTipoProd)
+        {
+            string Query = $"EXEC DBO.SP_EditarTipoProducto {IdTipoProd}, '{NomTipoProd}'";
+            DataTable DtTabla = new DataTable();
+            try
+            {
+                con.Open();
+                SqlDataAdapter Da = new SqlDataAdapter(Query, con);
+                Da.Fill(DtTabla);
+            }
+            catch (Exception EX)
+            {
+                throw;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return DtTabla;
+        }
+        
+
     }
 }
+
+
+
+
+
+

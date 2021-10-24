@@ -17,7 +17,10 @@ namespace Trabajo_Final
             InitializeComponent();
         }
 
-     
+        private void btnProGuardar_Click(object sender, EventArgs e)
+        {
+            dgvTipoProd.Rows.Add(TxtmodtipPro.Text);
+        }
     }
     
 }
