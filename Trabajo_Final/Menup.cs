@@ -12,6 +12,7 @@ namespace Trabajo_Final
 {
     public partial class MenuP : Form
     {
+        private Form login;
         public MenuP()
         {
             InitializeComponent();
@@ -29,6 +30,22 @@ namespace Trabajo_Final
             FormRArticulos formRArticulos = new FormRArticulos();
             formRArticulos.ShowDialog();
             
+        }
+
+        private void tipoDeProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void setLoginForm(Form Login)
+        {
+            this.login = Login;
+            this.login.Hide();
+        }
+
+        private void MenuP_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.login.Close();
         }
     }
 }
