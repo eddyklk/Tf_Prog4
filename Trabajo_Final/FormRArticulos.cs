@@ -1,4 +1,5 @@
-﻿using Registros;
+﻿using CargarItemsComboBox;
+using Registros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,14 +10,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace Trabajo_Final
 {
     public partial class FormRArticulos : Form
     {
    
         private ClassDatos datos = new ClassDatos();
-        private String Id = null;
+       // private String Id = null;
         private bool Editar = false;
+        
 
         public FormRArticulos()
         {
@@ -27,8 +31,10 @@ namespace Trabajo_Final
 
         private void FormRArticulos_Load(object sender, EventArgs e)
         {
+            Conexion cn = new Conexion();
+            cn.llenarItems(CmbTipoProd);
             
-        }
+        } 
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -74,7 +80,7 @@ namespace Trabajo_Final
                 TxtCantMin.Text    = dgvRegArt.CurrentRow.Cells["Cantidad Minima"].Value.ToString();
                 TxtCantMax.Text    = dgvRegArt.CurrentRow.Cells["Cantidad Maxima"].Value.ToString();
                 TxtExistencia.Text = dgvRegArt.CurrentRow.Cells["Existencia"].Value.ToString();
-                CmbTipoProd.SelectedIndex =
+               // CmbTipoProd.SelectedIndex =
             }
             else
             {
@@ -84,8 +90,14 @@ namespace Trabajo_Final
 
          private void CmbTipoProd_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+          
+                     
         }
+        
+
+
+        
+       
     }
 }
 

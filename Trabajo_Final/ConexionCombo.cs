@@ -8,17 +8,17 @@ using System.Windows.Forms;
 
 namespace CargarItemsComboBox
 {
-    class Conexion
+   public  class Conexion
     {
         SqlConnection cnn;
         SqlCommand cmd;
         SqlDataReader dr;
 
-        public Conexion()
+      public Conexion()
         {
             try
             {
-                cnn = new SqlConnection("Data Source=.;Initial Catalog=Tutorial;Integrated Security=True");
+                cnn = new SqlConnection(@"Data Source=BARRIOGAMES\SQLBARRIOGAMES;Initial Catalog=Tf_Prog4;Integrated Security=True");
                 cnn.Open();
             }
             catch (Exception ex)
@@ -33,11 +33,11 @@ namespace CargarItemsComboBox
         {
             try
             {
-                cmd = new SqlCommand("Select NombrePais from Paises", cnn);
+                cmd = new SqlCommand("Select NomTipoProd from TipoProductos", cnn);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    cb.Items.Add(dr["NombrePais"].ToString());
+                    cb.Items.Add(dr["NomTipoProd"].ToString());
                 }
                 cb.SelectedIndex = 0;
                 dr.Close();

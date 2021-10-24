@@ -11,6 +11,7 @@ namespace Registros
 {
     public class ClassDatos
     {
+
         public SqlConnection con = new SqlConnection(@"data source=BARRIOGAMES\SQLBARRIOGAMES; Initial catalog = Tf_Prog4; Integrated Security=true");
 
      
@@ -88,6 +89,7 @@ namespace Registros
             else
                 return false;
         }
+
 
     }
 }

@@ -17,9 +17,7 @@ namespace Trabajo_Final
             InitializeComponent();
         }
 
-        public private void btnProGuardar_Click(object sender, EventArgs e)
-        {
-            
-        }
+     
     }
+    
 }
