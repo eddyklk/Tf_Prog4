@@ -75,5 +75,11 @@ namespace Trabajo_Final
             FrmREmpleado formREmpleado = new FrmREmpleado();
             formREmpleado.ShowDialog();
         }
+
+        private void ventasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmCVenta formCVenta = new FrmCVenta();
+            formCVenta.ShowDialog();
+        }
     }
 }
