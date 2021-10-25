@@ -11,7 +11,6 @@ namespace Registros
 {
     public class ClassDatos
     {
-
         public SqlConnection con = new SqlConnection(@"data source=BARRIOGAMES\SQLBARRIOGAMES; Initial catalog = Tf_Prog4; Integrated Security=true");
 
 
@@ -90,6 +89,7 @@ namespace Registros
                 return false;
         }
 
+
         //#region EJEMPLO SAID
         public DataTable GetTipoProductos()
         {
@@ -108,7 +108,7 @@ namespace Registros
             finally
             {
                 con.Close();
-            }
+            }                                                
             return DtTabla;
         }
         public DataTable UPDATETipoProductos(int IdTipoProd, string NomTipoProd)
@@ -131,6 +131,28 @@ namespace Registros
             }
             return DtTabla;
         }
+
+        public DataTable EjecutarQuery(string Query)
+        {
+            DataTable result = new DataTable();
+            try
+            {
+                con.Open();
+                SqlDataAdapter Adapter = new SqlDataAdapter(Query, con);                
+                Adapter.Fill(result);                
+            }
+            catch (Exception EX)
+            {
+                Console.WriteLine("Error CD: " + EX.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return result;
+        }
+        #endregion
+
 
     }
 }
