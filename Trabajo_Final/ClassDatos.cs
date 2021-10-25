@@ -11,8 +11,8 @@ namespace Registros
 {
     public class ClassDatos
     {
-        public SqlConnection con = new SqlConnection(@"data source=SAID-HOLGUIN; Initial catalog = Tf_Prog4; Integrated Security=true");
-        //public SqlConnection con = new SqlConnection(@"data source=BARRIOGAMES\SQLBARRIOGAMES; Initial catalog = Tf_Prog4; Integrated Security=true");
+        //public SqlConnection con = new SqlConnection(@"data source=SAID-HOLGUIN; Initial catalog = Tf_Prog4; Integrated Security=true");
+        public SqlConnection con = new SqlConnection(@"data source=BARRIOGAMES\SQLBARRIOGAMES; Initial catalog = Tf_Prog4; Integrated Security=true");
 
 
         public DataTable Consulta(string strSql)
@@ -91,7 +91,7 @@ namespace Registros
         }
 
 
-        #region EJEMPLO SAID
+     
         public DataTable GetTipoProductos()
         {
             string Query = "EXEC DBO.SP_ObtenerTipoProductos ";
@@ -152,8 +152,6 @@ namespace Registros
             }
             return result;
         }
-       // #endregion
-
 
     }
 }

@@ -45,30 +45,15 @@ namespace Trabajo_Final
             this.TxtCantMin = new System.Windows.Forms.TextBox();
             this.TxtCantMax = new System.Windows.Forms.TextBox();
             this.TxtExistencia = new System.Windows.Forms.TextBox();
-
             this.dgvRegArt = new System.Windows.Forms.DataGridView();
-
-            this.Dgv1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnRASalir = new System.Windows.Forms.Button();
-
             this.TxtIdProd = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegArt)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv1)).BeginInit();
-
             this.SuspendLayout();
             // 
             // label1
@@ -155,7 +140,7 @@ namespace Trabajo_Final
             // 
             this.CmbTipoProd.FormattingEnabled = true;
             this.CmbTipoProd.Location = new System.Drawing.Point(386, 106);
-            this.CmbTipoProd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbTipoProd.Margin = new System.Windows.Forms.Padding(2);
             this.CmbTipoProd.Name = "CmbTipoProd";
             this.CmbTipoProd.Size = new System.Drawing.Size(125, 21);
             this.CmbTipoProd.TabIndex = 8;
@@ -164,7 +149,7 @@ namespace Trabajo_Final
             // TxtNomProd
             // 
             this.TxtNomProd.Location = new System.Drawing.Point(83, 36);
-            this.TxtNomProd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtNomProd.Margin = new System.Windows.Forms.Padding(2);
             this.TxtNomProd.Name = "TxtNomProd";
             this.TxtNomProd.Size = new System.Drawing.Size(169, 20);
             this.TxtNomProd.TabIndex = 9;
@@ -172,7 +157,7 @@ namespace Trabajo_Final
             // TxtUbicaProd
             // 
             this.TxtUbicaProd.Location = new System.Drawing.Point(83, 59);
-            this.TxtUbicaProd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtUbicaProd.Margin = new System.Windows.Forms.Padding(2);
             this.TxtUbicaProd.Name = "TxtUbicaProd";
             this.TxtUbicaProd.Size = new System.Drawing.Size(169, 20);
             this.TxtUbicaProd.TabIndex = 10;
@@ -180,7 +165,7 @@ namespace Trabajo_Final
             // TxtCostoProd
             // 
             this.TxtCostoProd.Location = new System.Drawing.Point(83, 83);
-            this.TxtCostoProd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtCostoProd.Margin = new System.Windows.Forms.Padding(2);
             this.TxtCostoProd.Name = "TxtCostoProd";
             this.TxtCostoProd.Size = new System.Drawing.Size(90, 20);
             this.TxtCostoProd.TabIndex = 11;
@@ -188,7 +173,7 @@ namespace Trabajo_Final
             // TxtPrecioProd
             // 
             this.TxtPrecioProd.Location = new System.Drawing.Point(83, 106);
-            this.TxtPrecioProd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtPrecioProd.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPrecioProd.Name = "TxtPrecioProd";
             this.TxtPrecioProd.Size = new System.Drawing.Size(90, 20);
             this.TxtPrecioProd.TabIndex = 12;
@@ -196,7 +181,7 @@ namespace Trabajo_Final
             // TxtCantMin
             // 
             this.TxtCantMin.Location = new System.Drawing.Point(386, 36);
-            this.TxtCantMin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtCantMin.Margin = new System.Windows.Forms.Padding(2);
             this.TxtCantMin.Name = "TxtCantMin";
             this.TxtCantMin.Size = new System.Drawing.Size(76, 20);
             this.TxtCantMin.TabIndex = 13;
@@ -204,7 +189,7 @@ namespace Trabajo_Final
             // TxtCantMax
             // 
             this.TxtCantMax.Location = new System.Drawing.Point(386, 59);
-            this.TxtCantMax.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtCantMax.Margin = new System.Windows.Forms.Padding(2);
             this.TxtCantMax.Name = "TxtCantMax";
             this.TxtCantMax.Size = new System.Drawing.Size(76, 20);
             this.TxtCantMax.TabIndex = 14;
@@ -212,47 +197,23 @@ namespace Trabajo_Final
             // TxtExistencia
             // 
             this.TxtExistencia.Location = new System.Drawing.Point(386, 83);
-            this.TxtExistencia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtExistencia.Margin = new System.Windows.Forms.Padding(2);
             this.TxtExistencia.Name = "TxtExistencia";
             this.TxtExistencia.Size = new System.Drawing.Size(76, 20);
             this.TxtExistencia.TabIndex = 15;
             // 
-            // Dgv1
+            // dgvRegArt
             // 
-
-            this.dgvRegArt.AllowUserToAddRows = false;
-            this.dgvRegArt.AllowUserToDeleteRows = false;
             this.dgvRegArt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRegArt.Location = new System.Drawing.Point(9, 140);
-            this.dgvRegArt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvRegArt.Location = new System.Drawing.Point(12, 142);
             this.dgvRegArt.Name = "dgvRegArt";
-            this.dgvRegArt.ReadOnly = true;
-            this.dgvRegArt.RowHeadersWidth = 51;
-            this.dgvRegArt.RowTemplate.Height = 24;
-            this.dgvRegArt.Size = new System.Drawing.Size(914, 229);
-            this.dgvRegArt.TabIndex = 16;
-
-            this.Dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8});
-            this.Dgv1.Location = new System.Drawing.Point(12, 156);
-            this.Dgv1.Name = "Dgv1";
-            this.Dgv1.RowHeadersWidth = 51;
-            this.Dgv1.RowTemplate.Height = 24;
-            this.Dgv1.Size = new System.Drawing.Size(1219, 282);
-            this.Dgv1.TabIndex = 16;
+            this.dgvRegArt.Size = new System.Drawing.Size(908, 217);
+            this.dgvRegArt.TabIndex = 24;
             // 
             // BtnGuardar
             // 
-            this.BtnGuardar.Location = new System.Drawing.Point(515, 38);
-            this.BtnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnGuardar.Location = new System.Drawing.Point(515, 39);
+            this.BtnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(56, 19);
             this.BtnGuardar.TabIndex = 17;
@@ -263,7 +224,7 @@ namespace Trabajo_Final
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(515, 62);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 19);
             this.button2.TabIndex = 18;
@@ -274,7 +235,7 @@ namespace Trabajo_Final
             // BtnEditar
             // 
             this.BtnEditar.Location = new System.Drawing.Point(515, 85);
-            this.BtnEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnEditar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(56, 19);
             this.BtnEditar.TabIndex = 19;
@@ -285,7 +246,7 @@ namespace Trabajo_Final
             // BtnRASalir
             // 
             this.BtnRASalir.Location = new System.Drawing.Point(515, 109);
-            this.BtnRASalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnRASalir.Margin = new System.Windows.Forms.Padding(2);
             this.BtnRASalir.Name = "BtnRASalir";
             this.BtnRASalir.Size = new System.Drawing.Size(56, 19);
             this.BtnRASalir.TabIndex = 20;
@@ -335,7 +296,7 @@ namespace Trabajo_Final
             this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.BtnGuardar);
-            this.Controls.Add(this.Dgv1);
+            this.Controls.Add(this.dgvRegArt);
             this.Controls.Add(this.TxtExistencia);
             this.Controls.Add(this.TxtCantMax);
             this.Controls.Add(this.TxtCantMin);
@@ -352,11 +313,11 @@ namespace Trabajo_Final
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormRArticulos";
             this.Text = "Registrar Articulo";
             this.Load += new System.EventHandler(this.FormRArticulos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRegArt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,7 +341,7 @@ namespace Trabajo_Final
         private System.Windows.Forms.TextBox TxtCantMin;
         private System.Windows.Forms.TextBox TxtCantMax;
         private System.Windows.Forms.TextBox TxtExistencia;
-        private System.Windows.Forms.DataGridView Dgv1;
+        private System.Windows.Forms.DataGridView dgvRegArt;
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button BtnEditar;

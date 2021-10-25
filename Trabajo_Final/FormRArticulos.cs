@@ -78,7 +78,7 @@ namespace Trabajo_Final
 
         private void BtnEditar_Click(object sender, EventArgs e)
         {
-            if (Dgv1.SelectedRows.Count > 0)
+            if (dgvRegArt.SelectedRows.Count > 0)
             {
                 Editar = true;
                 TxtIdProd.Text     = dgvRegArt.CurrentRow.Cells["IdProd"].Value.ToString();
