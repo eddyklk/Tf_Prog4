@@ -70,6 +70,47 @@ namespace Trabajo_Final
             formAjusteProd.ShowDialog();
         }
 
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmREmpleado formREmpleado = new FrmREmpleado();
+            formREmpleado.ShowDialog();
+        }
+
+        private void ventasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmCVenta formCVenta = new FrmCVenta();
+            formCVenta.ShowDialog();
+        }
+
+        private void articulosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmCArticulos formCArticulos = new FrmCArticulos();
+            formCArticulos.ShowDialog();
+        }
+
+        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmCCliente formClientes = new frmCCliente();
+            formClientes.ShowDialog();
+        }
+
+        private void usuariosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmCUsuarios formUsuarios = new FrmCUsuarios();
+            formUsuarios.ShowDialog();
+        }
+
+        private void empleadosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmCEmpleados formEmpleados = new FrmCEmpleados();
+            formEmpleados.ShowDialog();
+        }
+
+        private void tipoDeProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCTipoProductos formTipoProductos = new FrmCTipoProductos();
+            formTipoProductos.ShowDialog();
+        }
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormRClientes formRClientes = new FormRClientes();

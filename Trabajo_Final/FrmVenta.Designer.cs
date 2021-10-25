@@ -197,7 +197,7 @@ namespace Trabajo_Final
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 16;
-            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Text = "Limpiar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 

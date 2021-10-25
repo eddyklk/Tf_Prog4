@@ -43,11 +43,16 @@ namespace Trabajo_Final
 
         private void BtnRASalir_Click(object sender, EventArgs e)
         {
-            Close();
+            DialogResult dialogResult = MessageBox.Show("¿Esta Seguro que desea Salir, los datos se perderan?", "Advertencia", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            TxtIdProd.Text = "0";
             TxtNomProd.Clear();
             TxtUbicaProd.Clear();
             TxtCostoProd.Clear();
@@ -56,18 +61,19 @@ namespace Trabajo_Final
             TxtCantMax.Clear();
             TxtExistencia.Clear();
             TxtNomProd.Focus();
-            
+            dgvRegArt.DataSource = null;
         }
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            
-
-            Dgv1.Rows.Add(TxtNomProd.Text, TxtUbicaProd.Text, TxtCostoProd.Text, TxtPrecioProd.Text, TxtCantMin.Text, TxtCantMax.Text, TxtExistencia.Text, CmbTipoProd.Text);
-
-            //datos.Insert("Productos", "NomProd,UbicaProd,CostoProd,PrecioProd,CantidadMin,CantidadMax,Existencia", $"'{TxtNomProd.Text}','{TxtUbicaProd.Text}','{TxtCostoProd.Text}','{TxtPrecioProd.Text}','{TxtCantMin.Text}','{TxtCantMax.Text}','{TxtExistencia.Text}','{CmbTipoProd.Text}',");
-            //MessageBox.Show("Guardado Correctamente");
-            //dgvRegArt.DataSource = datos.Consulta("Productos");
+            DialogResult dialogResult = MessageBox.Show("¿Esta Seguro que desea Guardar los datos?", "Advertencia", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                string srtSql = $"EXEC DBO.SP_Insertar_Producto {TxtIdProd.Text}, '{TxtNomProd.Text}', '{TxtUbicaProd.Text}', {TxtCostoProd.Text}, {TxtPrecioProd.Text}, {TxtCantMin.Text}, {TxtCantMax.Text}, {TxtExistencia.Text}, 1";
+                DataTable data = datos.EjecutarQuery(srtSql);
+                dgvRegArt.DataSource = null;
+                dgvRegArt.DataSource = data;
+            }
         }
 
         private void BtnEditar_Click(object sender, EventArgs e)
@@ -75,15 +81,15 @@ namespace Trabajo_Final
             if (Dgv1.SelectedRows.Count > 0)
             {
                 Editar = true;
-
-                TxtNomProd.Text    = Dgv1.CurrentRow.Cells["Productos"].Value.ToString();
-                TxtUbicaProd.Text  = Dgv1.CurrentRow.Cells["Ubicación"].Value.ToString();
-                TxtCostoProd.Text  = Dgv1.CurrentRow.Cells["Costo"].Value.ToString();
-                TxtPrecioProd.Text = Dgv1.CurrentRow.Cells["Precio"].Value.ToString();
-                TxtCantMin.Text    = Dgv1.CurrentRow.Cells["Cantidad Minima"].Value.ToString();
-                TxtCantMax.Text    = Dgv1.CurrentRow.Cells["Cantidad Maxima"].Value.ToString();
-                TxtExistencia.Text = Dgv1.CurrentRow.Cells["Existencia"].Value.ToString();
-             
+                TxtIdProd.Text     = dgvRegArt.CurrentRow.Cells["IdProd"].Value.ToString();
+                TxtNomProd.Text    = dgvRegArt.CurrentRow.Cells["NomProd"].Value.ToString();
+                TxtUbicaProd.Text  = dgvRegArt.CurrentRow.Cells["UbicaProd"].Value.ToString();
+                TxtCostoProd.Text  = dgvRegArt.CurrentRow.Cells["CostoProd"].Value.ToString();
+                TxtPrecioProd.Text = dgvRegArt.CurrentRow.Cells["PrecioProd"].Value.ToString();
+                TxtCantMin.Text    = dgvRegArt.CurrentRow.Cells["CantidadMin"].Value.ToString();
+                TxtCantMax.Text    = dgvRegArt.CurrentRow.Cells["CantidadMax"].Value.ToString();
+                TxtExistencia.Text = dgvRegArt.CurrentRow.Cells["Existencia"].Value.ToString();
+                CmbTipoProd.SelectedValue = dgvRegArt.CurrentRow.Cells["IdTipoProd"].Value.ToString();
             }
             else
             {
@@ -101,10 +107,8 @@ namespace Trabajo_Final
         private void BtnRAConsultar_Click(object sender, EventArgs e)
         {
             ClassDatos Datos = new ClassDatos();
-            Dgv1.DataSource = Datos.Consulta("Select NomProd ,UbicaProd,CostoProd,PrecioProd,CantidadMin,CantidadMax as 'Cantidad Maxima' ,Existencia from Productos");
-
-            
-
+            dgvRegArt.DataSource = null;
+            dgvRegArt.DataSource = Datos.Consulta("Select * from Productos");
         }
     }
 }

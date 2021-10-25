@@ -72,6 +72,48 @@
     <Compile Include="FormTipoProducto.Designer.cs">
       <DependentUpon>FormTipoProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCArticulos.Designer.cs">
+      <DependentUpon>FrmCArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCCliente.Designer.cs">
+      <DependentUpon>frmCCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCEmpleados.Designer.cs">
+      <DependentUpon>FrmCEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCTipoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCTipoProductos.Designer.cs">
+      <DependentUpon>FrmCTipoProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCUsuarios.Designer.cs">
+      <DependentUpon>FrmCUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCVenta.Designer.cs">
+      <DependentUpon>FrmCVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmREmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmREmpleado.Designer.cs">
+      <DependentUpon>FrmREmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +145,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTipoProducto.resx">
       <DependentUpon>FormTipoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCArticulos.resx">
+      <DependentUpon>FrmCArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCCliente.resx">
+      <DependentUpon>frmCCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCEmpleados.resx">
+      <DependentUpon>FrmCEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCTipoProductos.resx">
+      <DependentUpon>FrmCTipoProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCUsuarios.resx">
+      <DependentUpon>FrmCUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCVenta.resx">
+      <DependentUpon>FrmCVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmREmpleado.resx">
+      <DependentUpon>FrmREmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVenta.resx">
       <DependentUpon>FrmVenta.cs</DependentUpon>
