@@ -93,5 +93,11 @@ namespace Trabajo_Final
             frmCCliente formClientes = new frmCCliente();
             formClientes.ShowDialog();
         }
+
+        private void usuariosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmCUsuarios formUsuarios = new FrmCUsuarios();
+            formUsuarios.ShowDialog();
+        }
     }
 }
