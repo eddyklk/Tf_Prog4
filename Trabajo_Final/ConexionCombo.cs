@@ -50,5 +50,25 @@ namespace CargarItemsComboBox
                 MessageBox.Show("No se lleno el ComboBox: " + ex.ToString());
             }
         }
+
+        public void cmbllenarciu(ComboBox cb)
+        {
+            try
+            {
+                cmd = new SqlCommand("Select NomCiu from Ciudades", cnn);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cb.Items.Add(dr["NomCiu"].ToString());
+                }
+                cb.SelectedIndex = 0;
+                dr.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se lleno el ComboBox: " + ex.ToString());
+            }
+        }
     }
 }

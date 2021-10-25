@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CargarItemsComboBox;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,20 @@ namespace Trabajo_Final
         public FormRClientes()
         {
             InitializeComponent();
+           
+        }
+
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            Dgv1.Rows.Add(TxtNom.Text, TxtApe.Text, TxtDirec.Text, CmbCiudad.Text, TxtTel.Text, TxtCel.Text, CmbEstado.Text);
+            
+        }
+
+        private void FormRClientes_Load(object sender, EventArgs e)
+        {
+            Conexion cn = new Conexion();
+            cn.cmbllenarciu(CmbCiudad);
+          
         }
     }
 }

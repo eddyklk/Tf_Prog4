@@ -69,5 +69,11 @@ namespace Trabajo_Final
             FormAjusteProd formAjusteProd = new FormAjusteProd();
             formAjusteProd.ShowDialog();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRClientes formRClientes = new FormRClientes();
+            formRClientes.ShowDialog();
+        }
     }
 }

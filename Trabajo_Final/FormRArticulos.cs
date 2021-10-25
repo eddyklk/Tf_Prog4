@@ -63,7 +63,7 @@ namespace Trabajo_Final
         {
             
 
-            dgvRegArt.Rows.Add(TxtNomProd.Text, TxtUbicaProd.Text, TxtCostoProd.Text, TxtPrecioProd.Text, TxtCantMin.Text, TxtCantMax.Text, TxtExistencia.Text, CmbTipoProd.Text);
+            Dgv1.Rows.Add(TxtNomProd.Text, TxtUbicaProd.Text, TxtCostoProd.Text, TxtPrecioProd.Text, TxtCantMin.Text, TxtCantMax.Text, TxtExistencia.Text, CmbTipoProd.Text);
 
             //datos.Insert("Productos", "NomProd,UbicaProd,CostoProd,PrecioProd,CantidadMin,CantidadMax,Existencia", $"'{TxtNomProd.Text}','{TxtUbicaProd.Text}','{TxtCostoProd.Text}','{TxtPrecioProd.Text}','{TxtCantMin.Text}','{TxtCantMax.Text}','{TxtExistencia.Text}','{CmbTipoProd.Text}',");
             //MessageBox.Show("Guardado Correctamente");
@@ -72,17 +72,17 @@ namespace Trabajo_Final
 
         private void BtnEditar_Click(object sender, EventArgs e)
         {
-            if (dgvRegArt.SelectedRows.Count > 0)
+            if (Dgv1.SelectedRows.Count > 0)
             {
                 Editar = true;
 
-                TxtNomProd.Text    = dgvRegArt.CurrentRow.Cells["Productos"].Value.ToString();
-                TxtUbicaProd.Text  = dgvRegArt.CurrentRow.Cells["Ubicación"].Value.ToString();
-                TxtCostoProd.Text  = dgvRegArt.CurrentRow.Cells["Costo"].Value.ToString();
-                TxtPrecioProd.Text = dgvRegArt.CurrentRow.Cells["Precio"].Value.ToString();
-                TxtCantMin.Text    = dgvRegArt.CurrentRow.Cells["Cantidad Minima"].Value.ToString();
-                TxtCantMax.Text    = dgvRegArt.CurrentRow.Cells["Cantidad Maxima"].Value.ToString();
-                TxtExistencia.Text = dgvRegArt.CurrentRow.Cells["Existencia"].Value.ToString();
+                TxtNomProd.Text    = Dgv1.CurrentRow.Cells["Productos"].Value.ToString();
+                TxtUbicaProd.Text  = Dgv1.CurrentRow.Cells["Ubicación"].Value.ToString();
+                TxtCostoProd.Text  = Dgv1.CurrentRow.Cells["Costo"].Value.ToString();
+                TxtPrecioProd.Text = Dgv1.CurrentRow.Cells["Precio"].Value.ToString();
+                TxtCantMin.Text    = Dgv1.CurrentRow.Cells["Cantidad Minima"].Value.ToString();
+                TxtCantMax.Text    = Dgv1.CurrentRow.Cells["Cantidad Maxima"].Value.ToString();
+                TxtExistencia.Text = Dgv1.CurrentRow.Cells["Existencia"].Value.ToString();
              
             }
             else
@@ -101,7 +101,7 @@ namespace Trabajo_Final
         private void BtnRAConsultar_Click(object sender, EventArgs e)
         {
             ClassDatos Datos = new ClassDatos();
-            dgvRegArt.DataSource = Datos.Consulta("Select NomProd ,UbicaProd,CostoProd,PrecioProd,CantidadMin,CantidadMax as 'Cantidad Maxima' ,Existencia from Productos");
+            Dgv1.DataSource = Datos.Consulta("Select NomProd ,UbicaProd,CostoProd,PrecioProd,CantidadMin,CantidadMax as 'Cantidad Maxima' ,Existencia from Productos");
 
             
 

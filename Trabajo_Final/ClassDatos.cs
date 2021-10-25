@@ -151,7 +151,7 @@ namespace Registros
             }
             return result;
         }
-        #endregion
+       // #endregion
 
 
     }

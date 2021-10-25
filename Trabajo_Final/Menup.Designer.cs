@@ -114,26 +114,27 @@ namespace Trabajo_Final
             // articulosToolStripMenuItem
             // 
             this.articulosToolStripMenuItem.Name = "articulosToolStripMenuItem";
-            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.articulosToolStripMenuItem.Text = "Articulos";
             this.articulosToolStripMenuItem.Click += new System.EventHandler(this.articulosToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             // 
             // empleadosToolStripMenuItem
             // 
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             // 
             // consultasToolStripMenuItem

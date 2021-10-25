@@ -20,8 +20,8 @@ namespace Trabajo_Final
 
         private void FormAjusteProd_Load(object sender, EventArgs e)
         {
-            //ClassDatos Datos = new ClassDatos();
-            //dgv1.DataSource = Datos.Consulta("Select NomProd ,UbicaProd,CostoProd,PrecioProd,CantidadMin,CantidadMax as 'Cantidad Maxima' ,Existencia from Productos");
+            ClassDatos Datos = new ClassDatos();
+            dgv1.DataSource = Datos.Consulta("Select NomProd ,UbicaProd,CostoProd,PrecioProd,CantidadMin,CantidadMax as 'Cantidad Maxima' ,Existencia from Productos");
         }
 
         private void dgv1_DoubleClick(object sender, EventArgs e)
