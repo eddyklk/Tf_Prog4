@@ -26,7 +26,7 @@ namespace Trabajo_Final
         {
             
             InitializeComponent();
-            
+            TxtIdProd.Text = "0";
         }
 
         private void FormRArticulos_Load(object sender, EventArgs e)
