@@ -32,10 +32,7 @@ namespace Trabajo_Final
             
         }
 
-        private void tipoDeProductoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         public void setLoginForm(Form Login)
         {
@@ -46,6 +43,18 @@ namespace Trabajo_Final
         private void MenuP_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.login.Close();
+        }
+
+        private void tipoDeProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTipoProducto formTipoProducto = new FormTipoProducto();
+            formTipoProducto.ShowDialog();
+        }
+
+        private void ajustesDeProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAjusteProd formAjusteProd = new FormAjusteProd();
+            formAjusteProd.ShowDialog();
         }
     }
 }

@@ -14,20 +14,20 @@ namespace Registros
 
         public SqlConnection con = new SqlConnection(@"data source=BARRIOGAMES\SQLBARRIOGAMES; Initial catalog = Tf_Prog4; Integrated Security=true");
 
-     
-        public DataTable Consulta(string tabla)
+
+        public DataTable Consulta(string strSql)
         {
-            string strSql = $"SELECT * FROM {tabla}";
-            con.Open();
+            //string strSql = $"select * from {tabla}";
+            //con.Open();
             DataTable DtTabla = new DataTable();
             SqlDataAdapter Da = new SqlDataAdapter(strSql, con);
             Da.Fill(DtTabla);
             con.Close();
             return DtTabla;
         }
-       
+
         /// Este metedo se utiliza para traer todos los datos de una tabla con condicion.
-       
+
         public DataTable Consulta(string tabla, string condicion)
         {
             string strSql = $"SELECT * FROM {tabla} WHERE {condicion}";
@@ -108,7 +108,7 @@ namespace Registros
             finally
             {
                 con.Close();
-            }                                                
+            }
             return DtTabla;
         }
         public DataTable UPDATETipoProductos(int IdTipoProd, string NomTipoProd)
@@ -131,11 +131,6 @@ namespace Registros
             }
             return DtTabla;
         }
-      //  #endregion
-
-
-       
-        
 
     }
 }
