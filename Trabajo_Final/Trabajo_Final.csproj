@@ -60,6 +60,12 @@
     <Compile Include="FormRArticulos.Designer.cs">
       <DependentUpon>FormRArticulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRClientes.Designer.cs">
+      <DependentUpon>FormRClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTipoProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRArticulos.resx">
       <DependentUpon>FormRArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRClientes.resx">
+      <DependentUpon>FormRClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTipoProducto.resx">
       <DependentUpon>FormTipoProducto.cs</DependentUpon>

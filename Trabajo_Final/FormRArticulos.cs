@@ -66,7 +66,6 @@ namespace Trabajo_Final
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-
             DialogResult dialogResult = MessageBox.Show("¿Esta Seguro que desea Guardar los datos?", "Advertencia", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
@@ -75,18 +74,11 @@ namespace Trabajo_Final
                 dgvRegArt.DataSource = null;
                 dgvRegArt.DataSource = data;
             }
-
-
-            
-
-            //datos.Insert("Productos", "NomProd,UbicaProd,CostoProd,PrecioProd,CantidadMin,CantidadMax,Existencia", $"'{TxtNomProd.Text}','{TxtUbicaProd.Text}','{TxtCostoProd.Text}','{TxtPrecioProd.Text}','{TxtCantMin.Text}','{TxtCantMax.Text}','{TxtExistencia.Text}','{CmbTipoProd.Text}',");
-            //MessageBox.Show("Guardado Correctamente");
-            //dgvRegArt.DataSource = datos.Consulta("Productos");
         }
 
         private void BtnEditar_Click(object sender, EventArgs e)
         {
-            if (dgvRegArt.SelectedRows.Count > 0)
+            if (Dgv1.SelectedRows.Count > 0)
             {
                 Editar = true;
                 TxtIdProd.Text     = dgvRegArt.CurrentRow.Cells["IdProd"].Value.ToString();

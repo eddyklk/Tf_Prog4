@@ -111,5 +111,10 @@ namespace Trabajo_Final
             FrmCTipoProductos formTipoProductos = new FrmCTipoProductos();
             formTipoProductos.ShowDialog();
         }
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRClientes formRClientes = new FormRClientes();
+            formRClientes.ShowDialog();
+        }
     }
 }

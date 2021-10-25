@@ -45,15 +45,30 @@ namespace Trabajo_Final
             this.TxtCantMin = new System.Windows.Forms.TextBox();
             this.TxtCantMax = new System.Windows.Forms.TextBox();
             this.TxtExistencia = new System.Windows.Forms.TextBox();
+
             this.dgvRegArt = new System.Windows.Forms.DataGridView();
+
+            this.Dgv1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnRASalir = new System.Windows.Forms.Button();
+
             this.TxtIdProd = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegArt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv1)).BeginInit();
+
             this.SuspendLayout();
             // 
             // label1
@@ -202,8 +217,9 @@ namespace Trabajo_Final
             this.TxtExistencia.Size = new System.Drawing.Size(76, 20);
             this.TxtExistencia.TabIndex = 15;
             // 
-            // dgvRegArt
+            // Dgv1
             // 
+
             this.dgvRegArt.AllowUserToAddRows = false;
             this.dgvRegArt.AllowUserToDeleteRows = false;
             this.dgvRegArt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -215,6 +231,23 @@ namespace Trabajo_Final
             this.dgvRegArt.RowTemplate.Height = 24;
             this.dgvRegArt.Size = new System.Drawing.Size(914, 229);
             this.dgvRegArt.TabIndex = 16;
+
+            this.Dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
+            this.Dgv1.Location = new System.Drawing.Point(12, 156);
+            this.Dgv1.Name = "Dgv1";
+            this.Dgv1.RowHeadersWidth = 51;
+            this.Dgv1.RowTemplate.Height = 24;
+            this.Dgv1.Size = new System.Drawing.Size(1219, 282);
+            this.Dgv1.TabIndex = 16;
             // 
             // BtnGuardar
             // 
@@ -302,7 +335,7 @@ namespace Trabajo_Final
             this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.BtnGuardar);
-            this.Controls.Add(this.dgvRegArt);
+            this.Controls.Add(this.Dgv1);
             this.Controls.Add(this.TxtExistencia);
             this.Controls.Add(this.TxtCantMax);
             this.Controls.Add(this.TxtCantMin);
@@ -323,7 +356,7 @@ namespace Trabajo_Final
             this.Name = "FormRArticulos";
             this.Text = "Registrar Articulo";
             this.Load += new System.EventHandler(this.FormRArticulos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRegArt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,7 +380,7 @@ namespace Trabajo_Final
         private System.Windows.Forms.TextBox TxtCantMin;
         private System.Windows.Forms.TextBox TxtCantMax;
         private System.Windows.Forms.TextBox TxtExistencia;
-        private System.Windows.Forms.DataGridView dgvRegArt;
+        private System.Windows.Forms.DataGridView Dgv1;
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button BtnEditar;
