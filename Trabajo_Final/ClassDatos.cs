@@ -91,7 +91,7 @@ namespace Registros
         }
 
 
-        #region EJEMPLO SAID
+     
         public DataTable GetTipoProductos()
         {
             string Query = "EXEC DBO.SP_ObtenerTipoProductos ";
@@ -152,8 +152,6 @@ namespace Registros
             }
             return result;
         }
-       // #endregion
-
 
     }
 }
