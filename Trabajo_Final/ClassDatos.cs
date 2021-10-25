@@ -11,23 +11,22 @@ namespace Registros
 {
     public class ClassDatos
     {
-
-        //public SqlConnection con = new SqlConnection(@"data source=SAID-HOLGUIN; Initial catalog = Tf_Prog4; Integrated Security=true");
         public SqlConnection con = new SqlConnection(@"data source=BARRIOGAMES\SQLBARRIOGAMES; Initial catalog = Tf_Prog4; Integrated Security=true");
 
-        public DataTable Consulta(string tabla)
+
+        public DataTable Consulta(string strSql)
         {
-            string strSql = $"SELECT * FROM {tabla}";
-            con.Open();
+            //string strSql = $"select * from {tabla}";
+            //con.Open();
             DataTable DtTabla = new DataTable();
             SqlDataAdapter Da = new SqlDataAdapter(strSql, con);
             Da.Fill(DtTabla);
             con.Close();
             return DtTabla;
         }
-       
+
         /// Este metedo se utiliza para traer todos los datos de una tabla con condicion.
-       
+
         public DataTable Consulta(string tabla, string condicion)
         {
             string strSql = $"SELECT * FROM {tabla} WHERE {condicion}";
@@ -90,7 +89,8 @@ namespace Registros
                 return false;
         }
 
-        #region EJEMPLO SAID
+
+        //#region EJEMPLO SAID
         public DataTable GetTipoProductos()
         {
             string Query = "EXEC DBO.SP_ObtenerTipoProductos ";
@@ -153,8 +153,6 @@ namespace Registros
         }
         #endregion
 
-
-        
 
     }
 }
