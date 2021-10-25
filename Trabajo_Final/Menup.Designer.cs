@@ -81,13 +81,13 @@ namespace Trabajo_Final
             this.agregarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tipoDeProductoToolStripMenuItem});
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.agregarToolStripMenuItem.Text = "Agregar";
             // 
             // tipoDeProductoToolStripMenuItem
             // 
             this.tipoDeProductoToolStripMenuItem.Name = "tipoDeProductoToolStripMenuItem";
-            this.tipoDeProductoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipoDeProductoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.tipoDeProductoToolStripMenuItem.Text = "Tipo de Producto";
             this.tipoDeProductoToolStripMenuItem.Click += new System.EventHandler(this.tipoDeProductoToolStripMenuItem_Click);
             // 
