@@ -18,6 +18,8 @@ namespace CargarItemsComboBox
         {
             try
             {
+                
+                //cnn = new SqlConnection(@"Data Source=SAID-HOLGUIN;Initial Catalog=Tf_Prog4;Integrated Security=True");
                 cnn = new SqlConnection(@"Data Source=BARRIOGAMES\SQLBARRIOGAMES;Initial Catalog=Tf_Prog4;Integrated Security=True");
                 cnn.Open();
             }

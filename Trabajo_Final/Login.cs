@@ -26,6 +26,7 @@ namespace Trabajo_Final
             if (Datos.Ingresar(TxtUsuario.Text, TxtContra.Text) == true)
             {
                 MenuP Formulario = new MenuP();
+                Formulario.AgregarUsuario(TxtUsuario.Text);
                 Formulario.setLoginForm(this);
                 Formulario.ShowDialog();                
             }
