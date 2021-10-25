@@ -22,6 +22,11 @@ namespace Trabajo_Final
 
             dgvTipoProd.Rows.Add(TxtmodtipPro.Text);
         }
+
+        private void BtnProSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
     
 }
