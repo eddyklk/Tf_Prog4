@@ -78,6 +78,18 @@
     <Compile Include="frmCCliente.Designer.cs">
       <DependentUpon>frmCCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCEmpleados.Designer.cs">
+      <DependentUpon>FrmCEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCTipoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCTipoProductos.Designer.cs">
+      <DependentUpon>FrmCTipoProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +142,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCCliente.resx">
       <DependentUpon>frmCCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCEmpleados.resx">
+      <DependentUpon>FrmCEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCTipoProductos.resx">
+      <DependentUpon>FrmCTipoProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCUsuarios.resx">
       <DependentUpon>FrmCUsuarios.cs</DependentUpon>

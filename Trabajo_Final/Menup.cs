@@ -99,5 +99,17 @@ namespace Trabajo_Final
             FrmCUsuarios formUsuarios = new FrmCUsuarios();
             formUsuarios.ShowDialog();
         }
+
+        private void empleadosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmCEmpleados formEmpleados = new FrmCEmpleados();
+            formEmpleados.ShowDialog();
+        }
+
+        private void tipoDeProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCTipoProductos formTipoProductos = new FrmCTipoProductos();
+            formTipoProductos.ShowDialog();
+        }
     }
 }

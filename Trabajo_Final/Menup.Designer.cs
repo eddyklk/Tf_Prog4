@@ -177,12 +177,14 @@ namespace Trabajo_Final
             this.empleadosToolStripMenuItem1.Name = "empleadosToolStripMenuItem1";
             this.empleadosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.empleadosToolStripMenuItem1.Text = "Empleados";
+            this.empleadosToolStripMenuItem1.Click += new System.EventHandler(this.empleadosToolStripMenuItem1_Click);
             // 
             // tipoDeProductosToolStripMenuItem
             // 
             this.tipoDeProductosToolStripMenuItem.Name = "tipoDeProductosToolStripMenuItem";
             this.tipoDeProductosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tipoDeProductosToolStripMenuItem.Text = "Tipo de productos";
+            this.tipoDeProductosToolStripMenuItem.Click += new System.EventHandler(this.tipoDeProductosToolStripMenuItem_Click);
             // 
             // ventasToolStripMenuItem
             // 
