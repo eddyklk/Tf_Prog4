@@ -66,6 +66,18 @@
     <Compile Include="FormTipoProducto.Designer.cs">
       <DependentUpon>FormTipoProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCArticulos.Designer.cs">
+      <DependentUpon>FrmCArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCCliente.Designer.cs">
+      <DependentUpon>frmCCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +118,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTipoProducto.resx">
       <DependentUpon>FormTipoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCArticulos.resx">
+      <DependentUpon>FrmCArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCCliente.resx">
+      <DependentUpon>frmCCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCVenta.resx">
       <DependentUpon>FrmCVenta.cs</DependentUpon>

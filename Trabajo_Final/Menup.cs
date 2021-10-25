@@ -81,5 +81,17 @@ namespace Trabajo_Final
             FrmCVenta formCVenta = new FrmCVenta();
             formCVenta.ShowDialog();
         }
+
+        private void articulosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmCArticulos formCArticulos = new FrmCArticulos();
+            formCArticulos.ShowDialog();
+        }
+
+        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmCCliente formClientes = new frmCCliente();
+            formClientes.ShowDialog();
+        }
     }
 }

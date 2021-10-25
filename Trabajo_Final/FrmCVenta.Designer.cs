@@ -117,6 +117,7 @@ namespace Trabajo_Final
             this.Controls.Add(this.dataGridView1);
             this.Name = "FrmCVenta";
             this.Text = "FrmCVenta";
+            this.Load += new System.EventHandler(this.FrmCVenta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);

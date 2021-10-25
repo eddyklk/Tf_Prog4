@@ -156,12 +156,14 @@ namespace Trabajo_Final
             this.articulosToolStripMenuItem1.Name = "articulosToolStripMenuItem1";
             this.articulosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.articulosToolStripMenuItem1.Text = "Articulos";
+            this.articulosToolStripMenuItem1.Click += new System.EventHandler(this.articulosToolStripMenuItem1_Click);
             // 
             // clientesToolStripMenuItem1
             // 
             this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
             this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.clientesToolStripMenuItem1.Text = "Clientes";
+            this.clientesToolStripMenuItem1.Click += new System.EventHandler(this.clientesToolStripMenuItem1_Click);
             // 
             // usuariosToolStripMenuItem1
             // 

@@ -69,5 +69,10 @@ namespace Trabajo_Final
                 MessageBox.Show("Seleccione una fila por favor");
             }
         }
+
+        private void FrmCVenta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
