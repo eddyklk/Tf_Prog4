@@ -13,6 +13,7 @@ namespace Trabajo_Final
     public partial class MenuP : Form
     {
         private Form login;
+        public string Usuario { get; set; }
         public MenuP()
         {
             InitializeComponent();
@@ -46,6 +47,18 @@ namespace Trabajo_Final
         private void MenuP_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.login.Close();
+        }
+        public void AgregarUsuario(string usuario)
+        {
+            this.Usuario = usuario;
+        }
+
+        private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmVenta venta = new FrmVenta();
+            venta.AgregarUsuario(this.Usuario);
+            venta.ShowDialog();
+            
         }
     }
 }

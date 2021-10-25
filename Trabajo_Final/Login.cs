@@ -16,6 +16,8 @@ namespace Trabajo_Final
         public Login()
         {
             InitializeComponent();
+            FrmVenta venta = new FrmVenta();
+            venta.ShowDialog();
         }
 
     
@@ -26,6 +28,7 @@ namespace Trabajo_Final
             if (Datos.Ingresar(TxtUsuario.Text, TxtContra.Text) == true)
             {
                 MenuP Formulario = new MenuP();
+                Formulario.AgregarUsuario(TxtUsuario.Text);
                 Formulario.setLoginForm(this);
                 Formulario.ShowDialog();                
             }

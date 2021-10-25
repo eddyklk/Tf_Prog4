@@ -131,6 +131,26 @@ namespace Registros
             }
             return DtTabla;
         }
+
+        public DataTable EjecutarQuery(string Query)
+        {
+            DataTable result = new DataTable();
+            try
+            {
+                con.Open();
+                SqlDataAdapter Adapter = new SqlDataAdapter(Query, con);                
+                Adapter.Fill(result);                
+            }
+            catch (Exception EX)
+            {
+                Console.WriteLine("Error CD: " + EX.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return result;
+        }
         #endregion
 
 
