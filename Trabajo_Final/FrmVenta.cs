@@ -21,6 +21,7 @@ namespace Trabajo_Final
         public string Usuario { get; set; }
         public string NombreUsuario { get; set; }
         public int IdEmp { get; set; }
+        public decimal Total { get; set; }
 
         public List<Compra> ListCompra { get; set; }
 
@@ -244,13 +245,32 @@ namespace Trabajo_Final
             }
 
             tbTotalCompra.Text = total.ToString("C2");
+            this.Total = total;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("¿Esta Seguro que desea proceder con la facturacion de la compra?", "Advertencia", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
-            {
+            {            
+                string strSql = $"EXEC DBO.SP_InsertarEncabezadoFactura {this.IdEmp}, 'FISCAL', {cbCliente.SelectedValue}, {this.Total} ";
+                DataTable data = Datos.EjecutarQuery(strSql);
+                int NumFact = (int)data.Rows[0][0];
+
+                foreach (Compra compra in ListCompra)
+                {
+                    strSql = "";
+                    strSql = $"EXEC DBO.SP_InsertarDetalleFactura {NumFact}, {compra.IdProd}, {compra.Cantidad}, {compra.SubTotal}";
+                    Datos.EjecutarQuery(strSql);
+                }
+                MessageBox.Show("Factura registrada satisfactoriamente!");
+                dataGridView1.DataSource = null;
+                ListCompra = new List<Compra>();
+                tbSubTotal.Text = "0";
+                nudCantidad.Value = 0;
+                tbPrecio.Text = "0";
+                tbSubTotal.Text = "0";
+                tbTotalCompra.Text = "0";
 
             }
         }

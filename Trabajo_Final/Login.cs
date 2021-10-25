@@ -16,8 +16,6 @@ namespace Trabajo_Final
         public Login()
         {
             InitializeComponent();
-            FrmVenta venta = new FrmVenta();
-            venta.ShowDialog();
         }
 
     
