@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Registros;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,8 @@ namespace Trabajo_Final
     {
         private Form login;
         public string Usuario { get; set; }
+        public int IdRol { get; set; } = 0;
+        private ClassDatos Datos = new ClassDatos();
         public MenuP()
         {
             InitializeComponent();
@@ -49,6 +52,8 @@ namespace Trabajo_Final
         public void AgregarUsuario(string usuario)
         {
             this.Usuario = usuario;
+            buscarUsuario();
+            permiso();
         }
 
         private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -115,6 +120,28 @@ namespace Trabajo_Final
         {
             FormRClientes formRClientes = new FormRClientes();
             formRClientes.ShowDialog();
+        }
+
+        private void buscarUsuario()
+        {
+            if (!String.IsNullOrEmpty(this.Usuario))
+            {
+                string strSql = $" SELECT NombreCompleto, IdEmp, IdRol FROM Usuarios WHERE NomUsuario = '{this.Usuario}'";
+                DataTable data = Datos.EjecutarQuery(strSql);
+                this.IdRol = (int)data.Rows[0][2];              
+            }
+        }
+
+        private void permiso()
+        {
+            if (this.IdRol != 1)
+            {
+                menuStrip1.Items[0].Visible = false;
+                menuStrip1.Items[1].Visible = false;
+                menuStrip1.Items[4].Visible = false;
+                menuStrip1.Items[5].Visible = false;
+
+            }
         }
     }
 }
