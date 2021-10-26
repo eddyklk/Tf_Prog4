@@ -224,6 +224,11 @@ namespace Trabajo_Final
             // nudCantidad
             // 
             this.nudCantidad.Location = new System.Drawing.Point(716, 79);
+            this.nudCantidad.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nudCantidad.Name = "nudCantidad";
             this.nudCantidad.Size = new System.Drawing.Size(128, 20);
             this.nudCantidad.TabIndex = 19;
