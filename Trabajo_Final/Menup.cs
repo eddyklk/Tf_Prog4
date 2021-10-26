@@ -143,5 +143,11 @@ namespace Trabajo_Final
 
             }
         }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRUsuario formUsuario = new FrmRUsuario();
+            formUsuario.ShowDialog();
+        }
     }
 }
